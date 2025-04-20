@@ -11,7 +11,7 @@ function App() {
     setResult(null);
     try {
       const res = await axios.get(
-        `http://localhost:5000/recommend?goal=${goal}`
+        `https://skill-recommender-backend.onrender.com/recommend?goal=${goal}`
       );
       setResult(res.data);
     } catch (err) {
